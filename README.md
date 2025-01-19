@@ -11,7 +11,6 @@ Example:
 python 102203815-topsis.py 102203815-data.csv "1,1,1,2,1" "+,+,-,+,+" 102203815-result.csv
 ```
 
-```
 
 ### Input Requirements
 - Input CSV file must have 3+ columns
