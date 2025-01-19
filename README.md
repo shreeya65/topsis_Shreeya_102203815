@@ -1,43 +1,46 @@
-# Topsis-Shreeya Kesarwani-102203815
+# TOPSIS Implementation
 
-A Python package for implementing the Technique for Order of Preference by Similarity to Ideal Solution (TOPSIS) method.
-
-## Installation
-
+## Program 1: Command Line Implementation
+Command to run:
 ```bash
-pip install Topsis-Shreeya-102203815
+python <RollNumber>.py <InputDataFile> <Weights> <Impacts> <ResultFileName>
 ```
 
-## Usage
-
-The package can be used through command line:
-
+Example:
 ```bash
-topsis <InputDataFile> <Weights> <Impacts> <ResultFileName>
+python 102203815-topsis.py 102203815-data.csv "1,1,1,2,1" "+,+,-,+,+" 102203815-result.csv
 ```
 
-### Example
-
-```bash
-topsis data.xlsx "1,1,1,2,1" "+,+,-,+,+" output.csv
 ```
 
-### Input Format
-* Input file (CSV/Excel) should contain numeric values for all columns except the first one.
-* First column is the object/variable name.
-* Second to last columns contain numeric values only.
+### Input Requirements
+- Input CSV file must have 3+ columns
+- First column: Object names (M1, M2, etc.)
+- 2nd column onwards: Numeric values only
+- Weights: Comma-separated (e.g., "0.2,0.2,0.2,0.2,0.2")
+- Impacts: Comma-separated +/- (e.g., "+,+,+,+,+")
 
-### Parameters
-1. `<InputDataFile>`: Input file name including path (csv/xlsx)
-2. `<Weights>`: Comma separated weight values for each column
-3. `<Impacts>`: Comma separated impacts (+/-) for each column
-4. `<ResultFileName>`: Output file name including path
+### Error Handling
+- Checks for correct parameter count
+- File existence verification
+- Numeric values validation
+- Weights and impacts count validation
+- Impact symbols must be + or -
 
-### Output
-The output file contains all the columns of input file along with two additional columns having TOPSIS Score and Rank.
+## Program 2: PyPI Package
+This implementation is available as a Python package on [`https://pypi.org/project/Topsis-Shreeya-102203815/1.0.0/`](https://pypi.org/project/Topsis-Shreeya-102203815/1.0.0/). You can easily install it via `pip`:
 
-## License
-MIT License
+```bash
+pip install Topsis-Shreeya-102203815==1.0.0
+```
+---
+
+
+## Requirements
+- Python
+- pandas
+- numpy
 
 ## Author
-Shreeya Kesarwani
+Name: Shreeya Kesarwani
+Roll Number: 102203815****
